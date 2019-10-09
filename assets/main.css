@@ -90,7 +90,7 @@ a {
 .nav-items {
   padding: 0;
   list-style-type: none;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .nav-items li{
