@@ -19,6 +19,39 @@ body {
 
 .container {
   width: 100vw;
+  height: 100vh;
+}
+
+.nav-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-company {
+  color: #909497;
+}
+
+.burguer-menu {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0 15px;
+  font-size: 20px;
+  color: #E67E22;
+}
+
+#toggle-btn {
+  color: #E67E22;
+}
+
+#toggle-btn i {
+  color: #E67E22 !important;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -33,21 +66,13 @@ body {
     right: 0;
   }
 
-  #toggle-btn {
+  .nav-header {
     display: none;
   }
 }
 
 .side-open {
   left: 0;
-}
-
-.side-menu #toggle-btn {
-  color: black;
-  text-decoration: none;
-  position: absolute;
-  margin-top: 20px;
-  right: -40
 }
 
 .nav-wrapper {
