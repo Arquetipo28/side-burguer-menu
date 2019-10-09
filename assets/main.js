@@ -6,6 +6,6 @@ $('#togle-btn').click(() => {
 $(document).mouseup((e) => {
   if ((!$sideMenu.is(e.target)) && $sideMenu.has(e.target).length === 0)
   {
-    $sideMenu.toggleClass("side-open")
+    $sideMenu.removeClass("side-open")
   }
 });
