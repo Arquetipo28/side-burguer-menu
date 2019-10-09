@@ -1,5 +1,5 @@
 var $sideMenu = $('#side-menu')
-$('#togle-btn').click(() => {
+$('#toggle-btn').click(() => {
   $sideMenu.toggleClass("side-open")
 })
 

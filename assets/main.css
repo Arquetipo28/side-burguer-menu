@@ -1,5 +1,6 @@
 body {
   overflow: hidden;
+  margin: 0;
 }
 
 .side-menu {
@@ -12,11 +13,36 @@ body {
   transition: all 0.4s ease-out;
 }
 
+.general-wrapper {
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+}
+
+@media only screen and (min-width: 1000px) {
+  .side-menu {
+    position: fixed;
+    left: 0;
+  }
+
+  .container {
+    width: calc(100vw - 300px);
+    position: absolute;
+    right: 0;
+  }
+
+  #toggle-btn {
+    display: none;
+  }
+}
+
 .side-open {
   left: 0;
 }
 
-.side-menu #togle-btn {
+.side-menu #toggle-btn {
   color: black;
   text-decoration: none;
   position: absolute;
